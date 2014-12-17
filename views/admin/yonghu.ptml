@@ -1,0 +1,51 @@
+<?php include_once "header.ptml"; ?>
+
+<div id="main" class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-2" id="sidebar">
+            <?php include "sidebar.ptml"; ?>
+        </div>
+        <div class="col-sm-9 col-md-10 main">
+            <div id="primary" class="panel panel-default">
+                <div class="panel-heading">用户管理信息</div>
+                <div class="panel-body">
+                <!-- 内容写到这里面 -->
+                    <?php if(!isset($data['users']) || !count($data['users'])) : ?>
+                    <div class="alert alert-warning">
+                        <p>没有数据</p>
+                    </div>
+                    <?php else : ?>
+                    <table class="table table-striped">
+                        <tr>
+                            <th></th>
+                            <th>账号</th>
+                            <th>邮箱</th>
+                            <th>用户名</th>
+                            <th>状态</th>
+                            <th>密码</th>
+                            <th>电话</th>
+                            <th>描述</th>
+                        </tr>
+                        <?php foreach ($data['users'] as $key => $value) : ?>
+                        <tr>
+                            <td><input type="checkbox" name="" /></td>
+                            <td><?= $value['id']; ?></td>
+                            <td><?= $value['email']; ?></td>
+                            <td><?= $value['name']; ?></td>
+                            <td><?= $value['state']; ?></td>
+                            <td><?= $value['pass']; ?></td>
+                            <td><?= $value['phone']; ?></td>
+                            <td><?= $value['des']; ?></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </table>
+                    <div class="operate">
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div><!-- /row -->
+</div>
+
+<?php include_once "footer.ptml"; ?>

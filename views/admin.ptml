@@ -1,0 +1,22 @@
+<?php include_once "admin/header.ptml"; ?>
+
+<div id="main" class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-2" id="sidebar">
+            <?php include "admin/sidebar.ptml"; ?>
+        </div>
+        <div class="col-sm-9 col-md-10 main">
+            <div id="primary" class="panel panel-default">
+                <div class="panel-heading">管理内容</div>
+                <div class="panel-body">
+                    <table>
+                        <tr><th>Name</th></tr>
+                        <tr><td>towry</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div><!-- /row -->
+</div>
+
+<?php include_once "admin/footer.ptml"; ?>

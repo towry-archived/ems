@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+}
+
+.main {
+    float: right;
+}
+
+#logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+#logo a:hover {
+    text-decoration: underline;
+    color: #222;
+}
+
+.header-left {
+    float: left;
+}
+.header-right {
+    float: right;
+}
+
+#sidebar {
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.row:after,
+.container:after,
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
