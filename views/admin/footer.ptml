@@ -1,11 +1,8 @@
 
 <div id="footer">
-    <div class="ui-grid-row">
-        <div class="ui-grid-1">
-            
-        </div>
-    </div>
 </div>
-</div><!-- #home -->
+</div><!-- #admin -->
+
+<script type="text/javascript" src="<?php _e($url); ?>/assets/js/jquery.min.js?v=20141130"></script>
 </body>
 </html>

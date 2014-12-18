@@ -26,7 +26,7 @@
                             <th>电话</th>
                             <th>描述</th>
                         </tr>
-                        <?php foreach ($data['users'] as $key => $value) : ?>
+                        <?php while ($value = mysql_fetch_assoc($users)) : ?>
                         <tr>
                             <td><input type="checkbox" name="" /></td>
                             <td><?= $value['id']; ?></td>
@@ -37,7 +37,7 @@
                             <td><?= $value['phone']; ?></td>
                             <td><?= $value['des']; ?></td>
                         </tr>
-                        <?php endforeach; ?>
+                        <?php endwhile; ?>
                     </table>
                     <div class="operate">
                     </div>

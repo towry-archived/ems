@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">后台主页</a>
+                  <a class="navbar-brand" href="<?php echo $url; ?>/admin">后台主页</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
