@@ -40,6 +40,7 @@ class T
             if (!mysql_select_db($defaults['db'])) {
                 throw new Exception("Error Selecting db", 1);
             }
+            mysql_set_charset('utf8',$link);
 
             self::$db = $link;
        }
